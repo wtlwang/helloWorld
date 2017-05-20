@@ -1,0 +1,6 @@
+#!/bin/bash
+ls $1 |while read myline
+do
+home=$1"/"
+	python3 /home/wtl/python/TCPsocketClient.py ${home}${myline}
+done
